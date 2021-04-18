@@ -15,8 +15,8 @@ int main() {
   int N = 9;
   vector<long long> v = {32, 35, 12, 6, 523, 65, 23, 4, 43};
 
-  vector<long long> answer;
-  vector<int> sorted(v.size());
+  vector<long long> answer(N);
+  vector<int> sorted(N);
 
   copy(v.begin(), v.end(), sorted.begin());
   sort(sorted.begin(), sorted.end());
