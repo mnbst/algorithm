@@ -25,7 +25,7 @@ int main() {
   vector<int> a(N);
   a = {32, 35, 12, 6, 523, 65, 23, 4, 43};
   vector<int> b(N);
-  b = {54, 34, 43, 65, 654, 876, 23, 65, 76};
+  b = {54, 34, 43, 65, 654, 876, 4, 65, 76};
   vector<int> c(N);
   c = {65, 34, 76, 62, 33, 87, 234, 54, 1};
 
@@ -35,18 +35,12 @@ int main() {
   sort(b.begin(), b.end());
   sort(c.begin(), c.end());
 
-  for (const auto &item : a) {
-    auto iter_b = upper_bound(b.begin(), b.end(), item);
-    vector<int> slice(N);
-    copy(iter_b, b.end(), slice.begin());
-    for (const auto &element : slice) {
-      auto iter_c = upper_bound(c.begin(), c.end(), element);
-      if (*iter_c > c.back()) {
-        break;
-      }
-      int diff = c.end() - iter_c;
-      answer += diff;
-    }
+  for (const auto &item : b) {
+    auto iter_a = lower_bound(a.begin(), a.end(), item);
+    int range_a = iter_a - a.begin();
+    auto iter_c = upper_bound(c.begin(), c.end(), item);
+    int range_c = c.end() - iter_c;
+    answer += range_a * range_c;
   }
   cout << answer << endl;
 }
