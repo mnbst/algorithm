@@ -10,5 +10,6 @@
         "*.html": "django-html",
         "vector": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "workbench.colorTheme": "Monokai Dimmed"
 }
