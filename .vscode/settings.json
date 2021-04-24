@@ -9,7 +9,8 @@
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "*.html": "django-html",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "ostream": "cpp"
     },
     "workbench.colorTheme": "Monokai Dimmed"
 }
