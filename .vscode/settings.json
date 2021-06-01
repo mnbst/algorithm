@@ -1,5 +1,6 @@
 {
     "C_Cpp.default.intelliSenseMode": "macos-clang-x86",
+    "C_Cpp.errorSquiggles": "Enabled",
     "editor.formatOnSave": true,
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, BreakBeforeBraces: Attach, SpaceBeforeParens: Never, IndentWidth: 4 }",
     "files.associations": {
@@ -8,7 +9,8 @@
         "**/templates/**/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "*.html": "django-html",
-        "vector": "cpp",
-        "algorithm": "cpp"
-    }
+        "cpp": "cpp",
+        "algorithm": "cpp",
+        "vector": "cpp"
+    },
 }
