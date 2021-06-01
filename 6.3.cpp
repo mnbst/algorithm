@@ -37,7 +37,7 @@ int main() {
   //   }
 
   int N = 9;
-  int M = 1000;
+  int M = 16;
   vector<int> a(N);
   a = {32, 35, 12, 6, 523, 65, 23, 4, 43};
 
